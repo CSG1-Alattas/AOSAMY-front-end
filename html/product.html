@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,cheome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="shortcut icon" href="/img/icoooo.png" type="icon" /> 
+    <title>المنتج | AOSAMY</title>
+</head>
+<body>
+
+    <!-- --------- Header  ------ -->
+
+    <header>
+
+
+        <a href="/html/index.html" id="logo"><img src="/img/AOSAMYlogo copy.png" width="150" ></a>
+        <nav class="navbar">
+            <a href="#" id="main-btn">المدونة</a>
+            <a href="/html/shops.html">الفنانين</a>
+            <a href="/html/index.html">السوق</a>
+         
+        </nav>
+        
+        <a class="b1" target="_blank" href="/html/singnin.html">أفتح متجرك</a>
+
+    </header>
+        
+
+    <!-- ===== -->
+
+
+
+
+
+	<div id="content-wrapper">
+		
+
+		<div class="column">
+			<img id=featured src="/img/fontoic.png">
+
+			<div id="slide-wrapper" >
+
+				<div id="slider">
+					<img class="thumbnail active" src="/img/fontoic.png">
+					<img class="thumbnail" src="/img/AOSAMYlogo1.png">
+					<img class="thumbnail" src="/img/fontoic.png">
+					<img class="thumbnail" src="/img/AOSAMYlogo1.png">
+					<img class="thumbnail" src="/img/fontoic.png">
+					<img class="thumbnail" src="/img/AOSAMYlogo1.png">
+				</div>
+
+			</div>
+		</div>
+
+		<div class="column">
+			<h1 class="title1">خط اوسامي الفخم</h1>
+			<hr>
+			
+
+			<p class="description">خط طباعي لاتيني سان سيرف، متاح للاستخدام الشخصي والتجاري
+				<br> ويتوفر في وزنين: عادي وسميك
+
+			</p>
+
+            <h3 class="price">$89.99</h3>
+			
+
+
+			<a class="pay"  href="#">تحميل</a>
+
+
+
+		</div>
+
+	</div>
+
+
+
+	    <!-- /* ------------ section footer ------------- */ -->
+
+		<footer id="footer">
+			<div class="row1">
+				
+				<div class="col1">
+					<img src="/img/AOSAMYlogofoot.png" class="logo1">
+				</div>
+	
+				<div class="col1">
+					<h3>الرئيسية</h3>
+					<ul>
+						<li><a href="#">المدونه</a></li>
+						<li><a href="#">الاسئلة الشائعة</a></li>
+						<li><a href="#">عن أوسامي</a></li>
+					</ul>
+				</div>
+	
+				<div class="col1">
+					<h3>الأمور القانونية</h3>
+					<ul>
+						<li><a href="#">سياسة الاستخدام</a></li>
+						<li><a href="#">الترخيص</a></li>
+						<li><a href="#">تواصل معنا</a></li>
+					</ul>
+				</div>
+	
+				<div class="col1">
+					<h3>تابعنا على</h3>
+					<ul>
+						<li><a href="#">فيسبوك</a></li>
+						<li><a href="#">انستقرام</a></li>
+						<li><a href="#">تويتر</a></li>
+					</ul>
+				</div>
+			</div>
+	
+			<!-- <hr/> -->
+	
+			<p class="footertitle"> صنع بحُب بواسطة <strong><i> &nbsp; AOSAMY TEAM </i></strong><br/>
+			All Copyright Reserved © 2024</p>
+	
+	
+		</footer>
+
+		
+
+	<script type="text/javascript">
+		let thumbnails = document.getElementsByClassName('thumbnail')
+
+		let activeImages = document.getElementsByClassName('active')
+
+		for (var i=0; i < thumbnails.length; i++){
+
+			thumbnails[i].addEventListener('mouseover', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+		}
+
+
+	</script>
+
+</body>
+</html>
